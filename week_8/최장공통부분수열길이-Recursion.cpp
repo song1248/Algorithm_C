@@ -36,8 +36,6 @@ int main()
 			}
 		}
 		
-		
-		
 		cout << LCS(len_str1-1, len_str2-1) << endl;
 	
 	}

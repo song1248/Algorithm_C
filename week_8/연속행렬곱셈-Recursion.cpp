@@ -45,7 +45,7 @@ int M(int s_idx, int e_idx, int* input)
 	 }
 	 	
 	int tmp_min_count = 99999;
-	// ì‹œì‘ê³¼ ëì‚¬ì´ì˜ ëª¨ë“ ì¡°í•© íƒìƒ‰  
+	// ½ÃÀÛ°ú ³¡»çÀÌÀÇ ¸ğµçÁ¶ÇÕ Å½»ö  
 	for(int mid = s_idx+1; mid < e_idx; mid++)
 	{
 		int tmp_count = M(s_idx, mid, input) + M(mid, e_idx, input) + input[s_idx] * input[mid] * input[e_idx];
