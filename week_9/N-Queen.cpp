@@ -59,11 +59,11 @@ long explore(long y, long x)
 //	}
 //	cout << endl;
 	
-	// ÀÌµ¿  
+	// ì´ë™  
 	for(long j =0; j<N; j++){
 		long next_y = y;
 		long next_x = j;
-		// ³õÀ» ¼ö ÀÖ´Â °÷ÀÌ¸é  
+		// ë†“ì„ ìˆ˜ ìžˆëŠ” ê³³ì´ë©´  
 		if(board[next_y][next_x] == 0){
 			long tmp = answer_arr[next_y];
 			answer_arr[next_y] = next_x+1;
@@ -84,7 +84,7 @@ long explore(long y, long x)
 long plus_1(long y, long x){
 	count += 1;
 	long i;
-	// ³õÀ» ¼ö ¾ø´Â°÷ +1
+	// ë†“ì„ ìˆ˜ ì—†ëŠ”ê³³ +1
 	for(long i =0; i<N; i++){
 		board[y][i] += 1;
 	} 
@@ -117,7 +117,7 @@ long plus_1(long y, long x){
 long minus_1(long y, long x){
 	count -= 1;
 	long i;
-	// ³õÀ» ¼ö ¾ø´Â°÷ +1
+	// ë†“ì„ ìˆ˜ ì—†ëŠ”ê³³ +1
 	for(long i =0; i<N; i++){
 		board[y][i] -= 1;
 	} 
